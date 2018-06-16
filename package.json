@@ -3,7 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": ""
+    "version": "3.7.1"
+  },
+  "scripts": {
+    "sync": "git submodule sync",
+    "dev": "hexo server",
+    "test": "echo 1",
+    "build": "hexo generate",
+    "deploy": "bash ./_scripts/deploy.sh"
   },
   "dependencies": {
     "hexo": "^3.2.0",
